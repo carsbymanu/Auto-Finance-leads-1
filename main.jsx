@@ -48,7 +48,7 @@ function App() {
         <div className="brand-wrap">
           <div className="logo"><Zap size={22} /></div>
           <div>
-            <p className="brand">Approved by Manu</p>
+            <p className="brand">I AM Approved</p>
             <p className="tagline">Premium Auto Finance</p>
           </div>
         </div>
