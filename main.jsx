@@ -58,8 +58,8 @@ function App() {
       <main className="main">
         <motion.section initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="hero">
           <div className="pill"><Sparkles size={16} /> Private, fast, lender-style application</div>
-          <h1>Auto financing that feels premium from the first click.</h1>
-          <p className="hero-text">A modern pre-qualification experience for customers looking for cars, SUVs, trucks, and flexible payment options across different credit situations.</p>
+          <h1>Flexible Auto Financing For All Credit Situations.</h1>
+          <p className="hero-text">New credit, rebuilding credit, self-employed, or established credit — explore financing options designed around your situation.</p>
 
           <div className="feature-grid">
             {[
@@ -73,8 +73,9 @@ function App() {
 
           <div className="trust-row">
             <span><CheckCircle2 size={17} /> No long boring form</span>
-            <span><CheckCircle2 size={17} /> Mobile-first funnel</span>
-            <span><CheckCircle2 size={17} /> Email lead delivery</span>
+            <span><CheckCircle2 size={17} /> All credit situations welcome</span>
+            <span><CheckCircle2 size={17} /> Fast pre-qualification</span>
+            <span><CheckCircle2 size={17} /> No pressure. No obligation.</span>
           </div>
         </motion.section>
 
