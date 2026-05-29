@@ -14,7 +14,68 @@ function App() {
   const progress = Math.round(((step + 1) / steps.length) * 100);
 
   const updateField = (name, value) => setFormData((prev) => ({ ...prev, [name]: value }));
-  const nextStep = () => step < steps.length - 1 && setStep(step + 1);
+  const validateStep = () => {
+  switch (step) {
+    case 0:
+      return (
+        formData.firstName &&
+        formData.lastName &&
+        formData.phone &&
+        formData.email
+      );
+
+    case 1:
+      return formData.dateOfBirth;
+
+    case 2:
+      return (
+        formData.homeAddress &&
+        formData.city &&
+        formData.province &&
+        formData.postalCode &&
+        formData.timeAtAddress
+      );
+
+    case 3:
+      return (
+        formData.employmentStatus &&
+        formData.employer &&
+        formData.timeEmployed &&
+        formData.monthlyIncome
+      );
+
+    case 4:
+      return (
+        formData.housingStatus &&
+        formData.housingPayment &&
+        formData.downPayment
+      );
+
+    case 5:
+      return (
+        formData.vehicleType &&
+        formData.tradeIn
+      );
+
+    case 6:
+      return (
+        formData.signature &&
+        formData.contactConsent &&
+        formData.creditConsent
+      );
+
+    default:
+      return true;
+  }
+};
+
+const nextStep = () => {
+  if (validateStep()) {
+    setStep(step + 1);
+  } else {
+    alert("Please complete all required fields before continuing.");
+  }
+};
   const prevStep = () => step > 0 && setStep(step - 1);
 
   const handleSubmit = async (e) => {
