@@ -179,6 +179,15 @@ const nextStep = () => {
           )}
         </motion.section>
       </main>
+      <footer className="footer">
+  <p>© 2026 IAM APPROVED. All Rights Reserved.</p>
+  <p>
+    Secure SSL Encryption • Private & Confidential • No Obligation Application
+  </p>
+  <p>
+    Financing options subject to lender approval. Terms and conditions apply.
+  </p>
+</footer>
     </div>
   );
 }
