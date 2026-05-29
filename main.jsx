@@ -216,5 +216,9 @@ function VehicleStep({ formData, updateField }) {
 function ConsentStep({ formData, updateField }) {
   return <div><div className="title-row"><Lock /><h2>Consent</h2></div><p className="muted">Final step before submission.</p><div className="fields"><Field label="Electronic signature"><input required value={formData.signature || ""} onChange={(e) => updateField("signature", e.target.value)} placeholder="Type your full legal name" /></Field><label className="check"><input required checked={!!formData.contactConsent} onChange={(e) => updateField("contactConsent", e.target.checked)} type="checkbox" />I agree to be contacted by phone, text, or email about my auto financing request. Message/data rates may apply.</label><label className="check"><input required checked={!!formData.creditConsent} onChange={(e) => updateField("creditConsent", e.target.checked)} type="checkbox" />I authorize IAM Approved and its lending partners to collect, use, and disclose my personal information for the purpose of reviewing my auto financing request. I understand a full credit application may require authorization for a credit bureau review with Equifax, TransUnion, or another credit reporting agency. Submission does not guarantee approval, rate, term, payment, or vehicle availability.</label></div></div>;
 }
-
+<p className="legal-links">
+  <a href="/privacy.html">Privacy Policy</a>
+  {" | "}
+  <a href="/terms.html">Terms & Conditions</a>
+</p>
 createRoot(document.getElementById("root")).render(<App />);
