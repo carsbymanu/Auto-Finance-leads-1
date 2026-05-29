@@ -138,8 +138,8 @@ const nextStep = () => {
             <span><CheckCircle2 size={17} /> Fast pre-qualification</span>
             <span><CheckCircle2 size={17} /> No pressure. No obligation.</span>
           </div>
-          <img
-  src="./bmw.png"
+     <img
+  src="bmw.png"
   alt="Luxury SUV"
   className="hero-car"
 />
