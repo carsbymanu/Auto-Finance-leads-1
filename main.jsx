@@ -133,7 +133,7 @@ const nextStep = () => {
           </div>
 
           <div className="trust-row">
-         <span><CheckCircle2 size={17} /> No long boring form</span>
+         <span><CheckCircle2 size={17} /> Simple application process</span>
             <span><CheckCircle2 size={17} /> All credit situations welcome</span>
             <span><CheckCircle2 size={17} /> Fast pre-qualification</span>
             <span><CheckCircle2 size={17} /> No pressure. No obligation.</span>
