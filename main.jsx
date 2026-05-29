@@ -107,7 +107,7 @@ const nextStep = () => {
 
       <nav className="nav">
         <div className="brand-wrap">
-          <div className="logo"><Zap size={22} /></div>
+          <div className="logo"><ShieldCheck size={22} /></div>
           <div>
             <p className="brand">I AM Approved</p>
             <p className="tagline">Easy Auto Finance</p>
