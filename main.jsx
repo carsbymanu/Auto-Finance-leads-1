@@ -143,6 +143,11 @@ const nextStep = () => {
   alt="Luxury SUV"
   className="hero-car"
 />
+          <div className="trust-strip">
+  <span><ShieldCheck size={16}/> SSL Secure</span>
+  <span><Lock size={16}/> Private & Confidential</span>
+  <span><CheckCircle2 size={16}/> No Obligation Application</span>
+</div>
         </motion.section>
 
         <motion.section initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} className="form-card">
