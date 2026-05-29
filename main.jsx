@@ -49,7 +49,7 @@ function App() {
           <div className="logo"><Zap size={22} /></div>
           <div>
             <p className="brand">I AM Approved</p>
-            <p className="tagline">Premium Auto Finance</p>
+            <p className="tagline">Easy Auto Finance</p>
           </div>
         </div>
         <a href="tel:+14372240801" className="call-link"><Phone size={16} /> Call now</a>
