@@ -406,3 +406,9 @@ textarea:focus{
     flex-direction:column
   }
 }
+.hero-car{
+  width:100%;
+  max-width:520px;
+  margin-top:30px;
+  filter:drop-shadow(0 30px 60px rgba(0,0,0,.12));
+}
