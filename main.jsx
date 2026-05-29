@@ -124,8 +124,7 @@ const nextStep = () => {
 
           <div className="feature-grid">
             {[
-  { icon: ShieldCheck, label: "Secure consent" },
-  { icon: Building2, label: "Lender-ready info" },
+  { icon: ShieldCheck, label: "Secure consent" },,
   { icon: Star, label: "Premium experience" },
   { icon: Building2, label: "20+ Lending Partners" },
 ].map(({ icon: Icon, label }) => (
