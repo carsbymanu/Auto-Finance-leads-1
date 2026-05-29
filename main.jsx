@@ -133,16 +133,16 @@ const nextStep = () => {
           </div>
 
           <div className="trust-row">
-            <img
-  src="/bmw.png"
-  alt="Luxury SUV"
-  className="hero-car"
-/>
-            <span><CheckCircle2 size={17} /> No long boring form</span>
+         <span><CheckCircle2 size={17} /> No long boring form</span>
             <span><CheckCircle2 size={17} /> All credit situations welcome</span>
             <span><CheckCircle2 size={17} /> Fast pre-qualification</span>
             <span><CheckCircle2 size={17} /> No pressure. No obligation.</span>
           </div>
+          <img
+  src="./bmw.png"
+  alt="Luxury SUV"
+  className="hero-car"
+/>
         </motion.section>
 
         <motion.section initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} className="form-card">
