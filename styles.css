@@ -444,3 +444,21 @@ textarea:focus{
 .footer p{
   margin:6px 0;
 }
+.check input[type="checkbox"]{
+  width:20px;
+  height:20px;
+  min-width:20px;
+  accent-color:#2563eb;
+  margin-top:3px;
+  }
+.legal-links{
+  text-align:center;
+  font-size:13px;
+  color:#64748b;
+}
+
+.legal-links a{
+  color:#2563eb;
+  font-weight:700;
+  text-decoration:none;
+}
