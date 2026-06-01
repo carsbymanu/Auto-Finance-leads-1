@@ -196,7 +196,15 @@ function Field({ label, children }) { return <label className="field"><span>{lab
 const provinces = ["Ontario", "Manitoba", "Alberta", "British Columbia", "Saskatchewan", "Quebec", "Nova Scotia", "New Brunswick", "Newfoundland and Labrador", "Prince Edward Island"];
 
 function ContactStep({ formData, updateField }) {
-  return <div><h2>Let’s start with you</h2><p className="muted">Your basic contact details.</p><div className="fields"><div className="two"><Field label="First name"><input required value={formData.firstName || ""} onChange={(e) => updateField("firstName", e.target.value)} placeholder="First name" /></Field><Field label="Last name"><input required value={formData.lastName || ""} onChange={(e) => updateField("lastName", e.target.value)} placeholder="Last name" /></Field></div><Field label="Phone number"><input required type="tel" value={formData.phone || ""} onChange={(e) => updateField("phone", e.target.value)} placeholder="Phone number" /></Field><Field label="Email address"><input required type="email" value={formData.email || ""} onChange={(e) => updateField("email", e.target.value)} placeholder="Email address" /></Field></div></div>;
+  return <div><h2>Let’s start with you</h2><p className="muted">Your basic contact details.</p><div className="fields"><div className="two"><Field label="First name"><input required value={formData.firstName || ""} onChange={(e) => updateField("firstName", e.target.value)} placeholder="First name" /></Field><Field label="Last name"><input required value={formData.lastName || ""} onChange={(e) => updateField("lastName", e.target.value)} placeholder="Last name" /></Field></div><Field label="Phone number"><input
+  type="tel"
+  inputMode="numeric"
+  autoComplete="tel"
+  placeholder="(555) 555-5555"
+  value={form.phone}
+  onChange={...}
+  required
+/></Field><Field label="Email address"><input required type="email" value={formData.email || ""} onChange={(e) => updateField("email", e.target.value)} placeholder="Email address" /></Field></div></div>;
 }
 function IdentityStep({ formData, updateField }) {
   return <div><div className="title-row"><FileSignature /><h2>Identity</h2></div><p className="muted">Just your date of birth. No SIN. No driver’s licence.</p><div className="fields"><Field label="Date of birth"><input required type="date" value={formData.dateOfBirth || ""} onChange={(e) => updateField("dateOfBirth", e.target.value)} /></Field></div></div>;
