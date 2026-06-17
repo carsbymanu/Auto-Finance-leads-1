@@ -117,7 +117,7 @@ body{
   margin:auto;
   min-height:calc(100vh - 100px);
   display:grid;
-  grid-template-columns:1fr 520px;
+  grid-template-columns:520px 1fr;
   gap:50px;
   align-items:center;
   padding:20px
