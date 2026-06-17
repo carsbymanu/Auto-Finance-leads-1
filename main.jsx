@@ -11,6 +11,15 @@ function App() {
   const [step, setStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({});
+  React.useEffect(() => {
+  if (window.innerWidth < 768) {
+    setTimeout(() => {
+      document.querySelector(".form-card")?.scrollIntoView({
+        behavior: "smooth"
+      });
+    }, 300);
+  }
+}, []);
   const progress = Math.round(((step + 1) / steps.length) * 100);
 
   const updateField = (name, value) => setFormData((prev) => ({ ...prev, [name]: value }));
