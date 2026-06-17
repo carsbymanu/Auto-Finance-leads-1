@@ -462,29 +462,21 @@ textarea:focus{
   font-weight:700;
   text-decoration:none;
 }
-@media (max-width:768px){
+@media (max-width:980px){
   .main{
-    display:flex;
-    flex-direction:column;
-    align-items:stretch;
-    min-height:auto;
-    gap:24px;
-    padding:10px 16px 30px;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:stretch !important;
+    min-height:auto !important;
+    gap:24px !important;
+    padding:10px 16px 30px !important;
   }
 
   .form-card{
-    order:1;
+    order:1 !important;
   }
 
   .hero{
-    order:2;
-  }
-
-  .nav{
-    padding:16px;
-  }
-
-  .hero h1{
-    font-size:38px;
+    order:2 !important;
   }
 }
