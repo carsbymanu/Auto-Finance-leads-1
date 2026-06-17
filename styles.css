@@ -462,3 +462,29 @@ textarea:focus{
   font-weight:700;
   text-decoration:none;
 }
+@media (max-width:768px){
+  .main{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    min-height:auto;
+    gap:24px;
+    padding:10px 16px 30px;
+  }
+
+  .form-card{
+    order:1;
+  }
+
+  .hero{
+    order:2;
+  }
+
+  .nav{
+    padding:16px;
+  }
+
+  .hero h1{
+    font-size:38px;
+  }
+}
